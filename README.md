@@ -1,2 +1,2 @@
-# TPI
+# Programacion I 
 Trabajo Integrador
