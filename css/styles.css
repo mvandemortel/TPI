@@ -108,4 +108,15 @@ main{
     display: flex;
     height: 200px;
 }
-
+.fav1{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    border: 5px;
+}
+.fav2{
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-start;
+    border: 5px;
+}
