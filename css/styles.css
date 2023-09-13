@@ -70,13 +70,11 @@ main{
 }
 .pelis{
     display: flex;
-    width: 220px;
-}
-.grupos h3{
-    font-size: 20px;
+    width: 150px;
 }
 .grupos p{
     text-align: center;
+
 }
 .tendencia{
     display: flex; 
@@ -108,6 +106,6 @@ main{
 }
 .pelis{
     display: flex;
-    height: 75px;
+    height: 200px;
 }
 
