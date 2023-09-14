@@ -86,6 +86,7 @@ main{
     align-items:flex-start;
     border: 5px;
 
+
 }
 .container{
     display: flex; 
@@ -133,4 +134,22 @@ main{
     flex-direction: row;
     justify-content: flex-start;
     border: 5px;
+}
+.genres a{
+    color: rgb(0, 0, 0);
+}
+
+.genres{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.genres ul{
+    display: flex;
+    flex-direction: row;
+
+}
+.genres li{
+    margin: 30px;
 }
