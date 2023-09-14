@@ -9,6 +9,9 @@ a{
     white-space: nowrap;
     color: beige;
 }
+footer li{
+    color: beige;
+}
 body{
     background-color: rgb(50, 39, 39);
     display: flex;
@@ -59,7 +62,7 @@ main{
 }
 .grupos{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 90vw;
     padding: 0 10px;
 }
@@ -76,13 +79,20 @@ main{
     text-align: center;
 
 }
-.tendencia{
+.caja{
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    border: 5px;
+
+}
+.container{
     display: flex; 
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     border: 5px;
-
 }
 
 .seriespopu{
@@ -113,6 +123,7 @@ main{
     flex-direction: row;
     justify-content: space-between;
     border: 5px;
+    margin: 10px;
 }
 .fav2{
     display: flex; 
