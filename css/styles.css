@@ -185,3 +185,16 @@ main{
     align-items: flex-start;
     border: 5px;
 }
+.detalle-genero{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 5px;
+}
+.detalle-genero img{
+    width: 40vh;
+    height: 50vb;
+    margin: 10px; 
+}
