@@ -79,8 +79,8 @@ main{
 .tendencia{
     display: flex; 
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
     border: 5px;
 
 }
@@ -88,16 +88,16 @@ main{
 .seriespopu{
     display: flex; 
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
     border: 5px;
 }
 
 .peliculaspopu{
     display: flex; 
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
     border: 5px;
 }
 .tit{
@@ -119,4 +119,12 @@ main{
     flex-direction: row;
     justify-content: flex-start;
     border: 5px;
+}
+.detalleserie{
+display: flex;
+width: 150px;
+display: flex; 
+flex-direction: row;
+justify-content: space-between;
+border: 5px;
 }
