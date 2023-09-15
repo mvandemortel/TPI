@@ -155,6 +155,7 @@ main{
 .caj{
     display: flex; 
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: flex-start;
     border: 5px;
@@ -185,6 +186,9 @@ main{
     align-items: flex-start;
     border: 5px;
 }
+.dere a{
+    color: black;
+}
 .detalle-genero{
     display: flex; 
     flex-direction: row;
@@ -197,4 +201,8 @@ main{
     width: 40vh;
     height: 50vb;
     margin: 10px; 
+}
+
+@media (max-widht: 420px) {
+    
 }
