@@ -187,7 +187,6 @@ main{
     border: 5px;
 }
 .detalle img{
-    width: 50vh;
     margin: 10px;    
 }
 
@@ -214,6 +213,9 @@ main{
     height: 50vb;
     margin: 10px; 
 }
+.seriei img{
+    width: 40vh;
+}
 
 @media (max-width: 420px) {
     /* .pelis{ */
@@ -236,6 +238,10 @@ main{
         flex-direction: column;
         align-items: center;
     }
+    .genres ul{
+        flex-direction: column;
+    }
+    
 
 }
 
