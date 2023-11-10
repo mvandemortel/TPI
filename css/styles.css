@@ -19,8 +19,6 @@ body{
 }
 header{
     display: flex;
-    width: 90vw;
-    height: 80px;
     align-items: center;
 }
 nav{
@@ -60,14 +58,17 @@ main{
 }
 .grupos{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 90vw;
     padding: 0 10px;
 }
-.grupos ul{
+.grupos article{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin: 16px 0px;
+    padding: 0px 0px 0px 40px;
 }
 .pelis{
     display: flex;
@@ -86,9 +87,11 @@ main{
 .container{
     display: flex; 
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
     border: 5px;
+    
 }
 .seriespopu{
     display: flex; 
@@ -106,8 +109,8 @@ main{
 }
 .tit{
     display:flex;
-    align-items:center;
-    justify-content: space-around;
+    align-items:flex-start;
+    border: 5px;
     margin-left: 40px;
     margin-bottom: 10px;
 }
@@ -118,6 +121,7 @@ main{
 .fav1{
     display: flex; 
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     border: 5px;
     margin: 10px;
@@ -144,3 +148,101 @@ main{
 .genres li{
     margin: 30px;
 }
+.favo{
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:flex-start;
+    border: 5px;
+    padding: 0 10px;
+}
+.caj{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 5px;
+}
+.caj article{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 16px 0px;
+    padding: 0px 0px 0px 40px;
+}
+.h1f{
+    display:flex;
+    align-items:flex-start;
+    border: 5px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+.detalle{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 5px;
+}
+.detalle img{
+    margin: 10px;    
+}
+
+.dere{
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 5px;
+}
+.dere a{
+    color: black;
+}
+.detalle-genero{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 5px;
+}
+.detalle-genero img{
+    width: 40vh;
+    height: 50vb;
+    margin: 10px; 
+}
+.seriei img{
+    width: 40vh;
+}
+
+@media (max-width: 420px) {
+    /* .pelis{ */
+        /* width: 50%;
+    }
+    .logo{
+        height: 50%;
+    }
+    .detalle img{
+        width: 50%; */
+    
+    header{
+        flex-direction: column;
+    }
+
+    .nav1{
+        flex-direction: column;
+    }
+    .detalle{
+        flex-direction: column;
+        align-items: center;
+    }
+    .genres ul{
+        flex-direction: column;
+    }
+    
+
+}
+
+    
