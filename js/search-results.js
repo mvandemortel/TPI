@@ -1,10 +1,10 @@
-let APIKey='7bbfa155b881d065cf760bebe36c4d28'
+let Key='1c1a02e00c06a48a2a0fa1ed2d8088de'
 
-let queryString=location.search
-let queryStringObj= new URLSearchParams(queryString)
-let busqueda= queryStringObj.get('busqueda') //recupero el queryString, o la entrada del usuario.
+let queryString = location.search
+let queryStringObject = new URLSearchParams(queryString)
+let busqueda = queryStringObject.get('busqueda') 
 
-let urlbusqueda=`https://api.themoviedb.org/3/search/movie?query=${busqueda}&api_key=${APIKey}`
+let urlbusqueda=`https://api.themoviedb.org/3/search/movie?api_key=${Key}&query=${busqueda}`
 
 
 fetch(urlbusqueda)
