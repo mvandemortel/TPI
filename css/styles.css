@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Poppins:wght@300;400;500&display=swap');
+
+
 *{
     box-sizing: border-box;
 }
@@ -13,9 +16,10 @@ footer li{
     color: beige;
 }
 body{
-    background-color: rgb(50, 39, 39);
+    background-color: rgb(26, 22, 22);
     display: flex;
     flex-direction: column;
+    font-family: 'Poppins', sans-serif;;
 }
 header{
     display: flex;
@@ -54,7 +58,9 @@ main{
     margin: 25px 0px 35px 0px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(147, 62, 79);
+    background-color: rgb(136, 20, 76);
+
+    
 }
 .grupos{
     display: flex;
@@ -216,6 +222,10 @@ main{
 .seriei img{
     width: 40vh;
 }
+.logo1 {
+    height: 50px;
+    margin-left: 40px;
+}
 
 @media (max-width: 420px) {
     /* .pelis{ */
@@ -241,6 +251,7 @@ main{
     .genres ul{
         flex-direction: column;
     }
+
     
 
 }
