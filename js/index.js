@@ -45,6 +45,8 @@ fetch(urlTopRated)
         console.log(error);
     })
 
+
+
     fetch(urlSerie)
     .then(function(response){
         return response.json();

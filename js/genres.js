@@ -21,7 +21,7 @@ fetch(urlGenresP)
         for(let i=0; i<data.genres.length; i++){
             lista_generos = data.genres[i].name + "  "
             let article=document.querySelector('.genres1');
-            article.innerHTML+=`<a href="detail-genres.html?id=${data.genres[i].id}"><article ><p>${lista_generos}</p></article></a>`
+            article.innerHTML+=`<a href="detail-genres.html?name=${lista_generos}&id=${data.genres[i].id}"><article ><p>${lista_generos}</p></article></a>`
 
         }
         
@@ -50,7 +50,7 @@ fetch(urlGenresP)
         for(let i=0; i<data.genres.length; i++){
             lista_generos = data.genres[i].name + "  "
             let article=document.querySelector('.genres2');
-            article.innerHTML+=`<a href="detail-genres.html?id=${data.genres[i].id}"><article ><p>${lista_generos}</p></article></a>`
+            article.innerHTML+=`<a href="detail-genres.html?name=${lista_generos}&id=${data.genres[i].id}"><article ><p>${lista_generos}</p></article></a>`
 
         }
         console.log(lista_generos)
@@ -58,4 +58,4 @@ fetch(urlGenresP)
     })
     .catch(function(error){
         console.log(error);
-    })
+    })
