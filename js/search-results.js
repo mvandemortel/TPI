@@ -6,7 +6,6 @@ let busqueda = queryStringObject.get('busqueda')
 
 let urlbusqueda=`https://api.themoviedb.org/3/search/movie?api_key=${Key}&query=${busqueda}`
 
-
 fetch(urlbusqueda)
     .then(function(response){
         return response.json();
