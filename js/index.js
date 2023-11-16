@@ -58,7 +58,7 @@ fetch(urlTopRated)
             topSerie.innerHTML+=`Series Populares:`
         for(let i = 0; i <5; i++){
             let article=document.querySelector('.seriespopu');
-            article.innerHTML+=`<a href="detail-movie.html?id=${listSerie[i].id}"><article><img src="https://image.tmdb.org/t/p/w342${listSerie[i].poster_path}" class="pelis"><p>${listSerie[i].name}</p><p>${listSerie[i].first_air_date
+            article.innerHTML+=`<a href="detail-serie.html?id=${listSerie[i].id}"><article><img src="https://image.tmdb.org/t/p/w342${listSerie[i].poster_path}" class="pelis"><p>${listSerie[i].name}</p><p>${listSerie[i].first_air_date
 
         }</p></article></a>`  
         }
