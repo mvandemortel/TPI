@@ -147,10 +147,7 @@ main{
     justify-content: center;
     align-items: center;
 }
-.genres ul{
-    display: flex;
-    flex-direction: row;
-}
+
 .genres li{
     margin: 30px;
 }
@@ -226,6 +223,7 @@ main{
     height: 50px;
     margin-left: 40px;
 }
+
 
 @media (max-width: 420px) {
     /* .pelis{ */
