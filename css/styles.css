@@ -224,6 +224,16 @@ main{
     margin-left: 40px;
 }
 
+.recom{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.recomendacion{
+    margin: 16px 0px;
+    padding: 0px 0px 0px 40px;
+}
 
 @media (max-width: 420px) {
     /* .pelis{ */

@@ -5,6 +5,7 @@ let queryStringObject = new URLSearchParams(queryString)
 let id_serie = queryStringObject.get('id') 
 
 let urlDetailS=`https://api.themoviedb.org/3/tv/${id_serie}?api_key=${Key}`
+let reco= `https://api.themoviedb.org/3/tv/${id_serie}/recommendations?api_key=${Key}`
 
 fetch(urlDetailS)
     .then(function(response){
@@ -25,3 +26,24 @@ fetch(urlDetailS)
     .catch(function(error){
         console.log(error);
     })
+
+fetch(reco)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(data){
+        console.log(data.results)
+        let listReco = data.results
+        let topReco= document.querySelector('.recomen');
+        topReco.addEventListener("click", function(){
+        for(let i = 0; i <5; i++){
+            let article=document.querySelector('.recom');
+            article.innerHTML+=`<a href="detail-serie.html?id=${listReco[i].id}"><article class="recomendacion"><img src="https://image.tmdb.org/t/p/w342${listReco[i].poster_path}" class="pelis">
+        </article></a>`  
+        }    
+        })
+        
+    })
+    .catch(function(error){
+        console.log(error);
+    })
