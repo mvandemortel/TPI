@@ -16,7 +16,7 @@ fetch(urlDetail)
         console.log(data); 
         let lista_generos = []
         for(let i=0; i<data.genres.length; i++){
-            lista_generos += data.genres[i].name + "  "
+            lista_generos += `<a href="detail-genres.html?id=${data.genres[i].id}&name=${data.genres[i].name}&type=movie"> ${data.genres[i].name}  </a>`
         }
         let izquierda = document.querySelector('.izq')
         let derecha = document.querySelector('.dere')
