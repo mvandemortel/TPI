@@ -15,14 +15,15 @@ fetch(urlbusqueda)
         document.querySelector('#busqueda').innerHTML=busqueda
         let listPelis = data.results
         let search= document.querySelector('.h1f');
-            search.innerHTML+=`Se muestran resultados o similares de ${busqueda}`
+            
+            if (listPelis.length === 0)  {
+                innerText= `No se encuentran resultados para ${busqueda}`
+            }
+                else {search.innerHTML+=`Se muestran resultados o similares de ${busqueda}`}
         for(let i = 0; i <listPelis.length; i++){
             let article=document.querySelector('.fav1');
             article.innerHTML+=`<a href="detail-movie.html?id=${listPelis[i].id}"><article><img src="https://image.tmdb.org/t/p/w342${listPelis[i].poster_path}" class="pelis"><p>${listPelis[i].title}</p><p>${listPelis[i].release_date
         }</p></article></a>`
-        if (resultados.length === 0)  {
-            h2Results.innerText= `No se encuentran resultados para ${busqueda}`
-        }
         }
     })
     .catch(function(error){
