@@ -39,8 +39,7 @@ fetch(reco)
         topReco.addEventListener("click", function(){
         for(let i = 0; i <5; i++){
             let article=document.querySelector('.recom');
-            article.innerHTML+=`<a href="detail-movie.html?id=${listReco[i].id}"><article class="recomendacion"><img src="https://image.tmdb.org/t/p/w342${listReco[i].poster_path}" class="pelis"><p>${listReco[i].title}</p><p>${listReco[i].release_date
-        }</p></article></a>`  
+            article.innerHTML+=`<a href="detail-movie.html?id=${listReco[i].id}"><article class="recomendacion"><img src="https://image.tmdb.org/t/p/w342${listReco[i].poster_path}" class="pelis"></article></a>`  
         }    
         })
         
