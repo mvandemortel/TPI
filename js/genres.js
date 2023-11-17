@@ -57,5 +57,5 @@ fetch(urlGenresP)
        
     })
     .catch(function(error){
-        console.log(error);
+        console.log('Ocurrio error:'+ error);
     })
